@@ -30,6 +30,7 @@ Wild Fire
 # Potential Idea:
 - Have a global pool of resources used to fight wildfires
 - Have a 2D array of 0's to represent land, and randomly choose positions within this array to have the value of 1. A value of 1 represents a wildfire.
+- Firefighting resources are located in different places and the closest available are dispatched to the fire. 
 - For each wildfire that breaks out, somehow associate two values with it: one value to represent the number of resources needed from the global resource pool to extinguish the fire, and a priority. Lower priorities go first.
 - Either use multiple processes or threads to deal with these wildfires, where each process or thread uses some of the global resources to extinguish the fires.
 - Use interprocess communication to communicate to other processes or threads that a wildfire is being dealt with.
