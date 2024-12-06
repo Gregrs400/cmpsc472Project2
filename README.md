@@ -36,8 +36,10 @@ The structure of the code is intended to follow good programming practices such 
 The main function begins by creating an array of file descriptors for inter-process communication, creating the landscape using the Landscape struct, and setting random spots throughout the landscape on fire. A Fire struct is used to store the row and column of a fire and how many resources needed to extinguish the fire. Once all fires are set, a child process is created. The code is structured so the child process can create threads to search the landscape for fires and communicate the fire location and the number of resources for the fire to the parent process via a pipe. At the same time, the parent process runs in a loop to listen for all fires reported from the child process. Once the child process finishes its search of the landscape, it will send a message to the parent process, and upon receiving this message, the parent process will break out of the loop. To ensure the child process finishes first, the parent process then immediately calls a wait command. Once the child process has finished executing, the parent process will use the information passed to it to dispatch resources to the wildfires throughout the landscape to extinguish them. 
 
 # List of Functionalities and Verification Results
-- searchForFires() - a function used by threads to search the landscape for fires
+- searchForFires() - a function used by threads to search the landscape for fires  
+![image](/searchForFiresOutput.jpg) 
 - setFire() - used to randomly select a row and column to change that position's value from a 0 to a 1, indicating a wildfire
+![image](/setFiresOutput.jpg) 
 - printLandscape() - prints out the landscape where different numbers are different colors to show which positions are not on fire (represented by a green 0), which positions are on fire (represented by a red 1), which positions contain firefighting resources (represented by a yellow 7), and which position the 911 dispatch center is (represented by a blue 5)
 # Showcasing the Achievement of Project Goals
 
