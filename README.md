@@ -37,10 +37,16 @@ The main function begins by creating an array of file descriptors for inter-proc
 
 # List of Functionalities and Verification Results
 - searchForFires() - a function used by threads to search the landscape for fires  
-![image](/searchForFiresOutput.jpg) 
+![image](/images/searchForFiresOutput.jpg) 
 - setFire() - used to randomly select a row and column to change that position's value from a 0 to a 1, indicating a wildfire
-![image](/setFiresOutput.jpg) 
+![image](/images/setFiresOutput.jpg) 
 - printLandscape() - prints out the landscape where different numbers are different colors to show which positions are not on fire (represented by a green 0), which positions are on fire (represented by a red 1), which positions contain firefighting resources (represented by a yellow 7), and which position the 911 dispatch center is (represented by a blue 5)
 # Showcasing the Achievement of Project Goals
 
 # Discussion and Conclusion
+This project successfully integrates key concepts such as child processes, threading, inter-process communication, and synchronization mechanisms into a functional and meaningful application. The idea of simulating wildfire monitoring and response using a 2D array demonstrates how theoretical constructs can be applied to solve real-world problems.
+
+This project demonstrates the successful application of course concepts in designing and implementing a complex, multi-threaded, and multi-process system. The wildfire monitoring and extinguishing simulation illustrates the practical use of synchronization, IPC, and system programming techniques. The implementation achieves its primary goals of:
+- Efficiently detecting and addressing wildfires in a simulated environment.
+- Highlighting the importance of thread safety and resource management in concurrent systems.
+- Demonstrating modularity and good coding practices.
