@@ -49,7 +49,12 @@ The main function begins by creating an array of file descriptors for inter-proc
 ![image](/images/setFiresOutput.jpg) 
 - printLandscape() - prints out the landscape where different numbers are different colors to show which positions are not on fire (represented by a green 0), which positions are on fire (represented by a red 1), which positions contain firefighting resources (represented by a yellow 7), and which position the 911 dispatch center is (represented by a blue 5)
 # Showcasing the Achievement of Project Goals
-
+## Placing Dispatch, Resources, Fires, and Printing Landscape
+![image](/images/printedLandscape.jpg)  
+## Moving Resources
+![image](/images/movingResources.jpg)  
+## Extinguished All Fires
+![image](/images/extinguishedFires.jpg) 
 # Discussion and Conclusion
 This project successfully integrates key concepts such as child processes, threading, inter-process communication, and synchronization mechanisms into a functional and meaningful application. The idea of simulating wildfire monitoring and response using a 2D array demonstrates how theoretical constructs can be applied to solve real-world problems.
 
